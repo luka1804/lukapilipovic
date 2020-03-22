@@ -1,0 +1,4 @@
+SELECT e.lastName,e.firstName,e.employeeNumber,e.reportsTo,m.firstName,m.lastName,m.employeeNumber,m.reportsTo 
+FROM `employees` e 
+INNER JOIN employees m 
+ON m.employeeNumber=e.reportsTo;

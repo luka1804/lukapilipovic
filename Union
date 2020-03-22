@@ -1,0 +1,7 @@
+SELECT contactFirstName,contactLastName
+FROM `customers`
+WHERE city='Las Vegas'
+UNION
+SELECT contactFirstName,contactLastName 
+FROM `customers`
+WHERE country='USA';
